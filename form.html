@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form novalidate>
+        <p>
+          <label for="firstnumber">
+            <span>Your first value</span></span>
+            <input type="number" id="firstnumber" name="first" required minlength="1">
+            <span class="error" aria-live="polite"></span>
+          </label>
+          <label for="secondnumber">
+            <span>Your second value:</span>
+            <input type="number" id="secondnumber" name="second" required minlength="1">
+            <span class="error" aria-live="polite"></span>
+          </label>
+            <span>Your Operation operation:</span>
+            <select id="operation" name="operation" required >
+                
+              <option value="+">+</option>
+              <option value="-">-</option>
+              <option value="*">*</option>
+              <option value="/">/</option>
+            </select>
+        </p>
+        <button type="submit" id="btn">Submit</button>
+    </form>
+
+    
+      <script src= "apps.js">   </script>
+</body>
+</html>
